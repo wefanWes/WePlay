@@ -14,11 +14,11 @@ import javax.annotation.Resource;
 @Service("userService")
 public class UserServiceImpl implements IUserService{
     @Resource
-    private UserDao userDao;
+    private UserDao userDao1;
 
     @Override
     public User getUserById(String userId) {
-        return this.userDao.selectByPrimaryKey(userId);
+        return this.userDao1.selectByPrimaryKey(userId);
     }
 
 
